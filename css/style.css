@@ -961,8 +961,8 @@ a{
         align-items: center;
         justify-content: center;
     }
-    .mobile{
-        display: block;
+    .mobiles{
+        display: inline;
     }
     .hero__title{
         font-size: 25px;
