@@ -74,6 +74,12 @@ a{
     min-height: 70px;
     border-bottom: 1px solid #fff;
 }
+.header__nav-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+}
 .header__grid-container{
     display: flex;
     justify-content: space-between;
@@ -105,7 +111,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 435px;
+    column-gap: 50px;
 }
 .header__nav-link{
     display: flex;
@@ -125,7 +131,9 @@ a{
     object-fit: cover;
 }
 .burger-text{
-    font-size: 16px;
+    font-size: 24px;
+    color: #fff;
+
 }
 .burger-item{
     display: flex;
@@ -207,6 +215,7 @@ a{
     column-gap: 45px;
     margin-top: 35px;
 }
+
 .hero__about{
     background: none;
     border: none;
@@ -534,7 +543,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 35%;
     height: 300px;
     background-color: #0a0a0a; 
     position: relative;
@@ -792,8 +801,14 @@ a{
     .donate-btn{
         font-size: 16px;
     }
+    .burger-text{
+        font-size: 20px;
+    }
 }
 @media (max-width: 620px) {
+    .wrapper-ul{
+        width: 50%;
+    }
     .container{
         max-width: 590px;
         margin: 0 auto;
@@ -938,6 +953,9 @@ a{
     }
 }
 @media (max-width: 370px) {
+    .burger-text{
+        font-size: 18px;
+    }
     .wrapper-ul{
         display: flex;
         align-items: center;
