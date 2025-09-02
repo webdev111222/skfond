@@ -57,6 +57,9 @@ h3{
     white-space: normal;
     word-break: break-word;
 }
+a{
+    display: block;
+}
 .container{
     max-width: 1270px;
     margin: 0px auto;
@@ -105,7 +108,9 @@ h3{
     min-width: 435px;
 }
 .header__nav-link{
-    display: block;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
     color: #fff;
     font-family: "Raleway-medium";
     font-weight: 500;
@@ -113,36 +118,24 @@ h3{
     font-size: 18px;
     position: relative;
 }
-.icon-help::before{
-    content: "";
-    background-image: url(../icons/shield_question.svg);
+
+.icon-mail{
     width: 24px;
     height: 24px;
-    top: -3px;
-    left: -30px;
-    position: absolute;
+    object-fit: cover;
 }
-.icon-truck::before{
-    content: "";
-    background-image: url(../icons/truck.svg);
-    width: 24px;
-    height: 24px;
-    top: -2px;
-    left: -33px;
-    position: absolute;
+.burger-text{
+    font-size: 16px;
 }
-.icon-mail::before{
-    content: "";
-    background-image: url(../icons/mail.svg);
-    width: 24px;
-    height: 24px;
-    top: -2px;
-    left: -32px;
-    position: absolute;
+.burger-item{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 .header__nav-link:hover{
     text-underline-offset: 7px;
     text-decoration: underline;
+    text-align: center;
 }
 .donate-btn, .header__donate-btn{
     display: flex;
@@ -538,6 +531,9 @@ h3{
     margin: 80px 50px;
 }
 .wrapper-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: 300px;
     background-color: #0a0a0a; 
@@ -581,6 +577,9 @@ h3{
 .donate-btn{
     margin: 0px;
     padding: 0px;
+}
+.mobiles{
+    display: none;
 }
 @media (max-width: 1140px) {
     .wrapper{
@@ -887,6 +886,17 @@ h3{
     .footer__grid-container{
         margin-top: 100px;
     }
+    .wrapper-ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .burger-list{
+        margin: 0px;
+    }
+    .header__nav-link{
+        font-size: 18px;
+    }
 }
 @media (max-width: 425px) {
     .header__nav-link{
@@ -896,12 +906,63 @@ h3{
     .hero__title{
         font-size: 32px;
     }
+    .fundActivities__title {
+        font-size: 32px;
+    }
+    .donate__title-tablet{
+        font-size: 32px;
+    }
+    .donate{
+        min-height: 600px;
+    }
+    .donate__subtitle{
+        font-size: 22px;
+    }
+    .fundActivities{
+        padding-block: 40px;
+    }
+    .findTheHelp__title{
+        padding-top: 40px;
+    }
+    .findTheHelp__background{
+        max-width: 252px;
+    }
+    .findTheHelp__title{
+        font-size: 32px;
+    }
+    .findTheHelp__grid-wrapper{
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    }
+    .footer__contacts{
+        font-size: 20px;
+    }
 }
 @media (max-width: 370px) {
+    .wrapper-ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobile{
+        display: block;
+    }
     .hero__title{
         font-size: 25px;
     }
     .hero{
-        min-height: 490px;
+        max-height: 590px;
+    }
+    .header__logo-link{
+        font-size: 24px;
+    }
+    .header__logo-img{
+        width: 32px;
+        height: 32px;
+    }
+    .hero__overtitle::before{
+        left: 15px;
+    }
+    .hero__subtitle{
+        font-size: 22px;
     }
 }
