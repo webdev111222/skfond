@@ -259,6 +259,9 @@ a{
     margin-top: 45px;
     margin-bottom: 53px;
 }
+.findTheHelp__subtitle{
+    margin-top: 25px;
+}
 .findTheHelp__subtitle, .tab{
     font-family: "Gilroy";
     font-size: 22px;
