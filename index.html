@@ -9,7 +9,21 @@
     <link rel="shortcut icon" href="icons/logo.svg" type="image/x-icon">
     
 <body>
-    <header class="header">
+    <div class="hero__popup">
+        <div class="popup__wrapper">
+            <h3 class="popup__title">Об Орловском К.П.</h3>
+            <button class="popup__close">
+                <img class="popup__close-img" src="./icons/close.svg" alt="Закрыть">
+            </button>
+            <p class="popup__subtitle">Кирилл Прокофьевич Орловский (1895-1968) — выдающийся деятель советской эпохи, чья жизнь стала символом несгибаемой воли и преданности Родине. Родился в деревне Мышковичи Могилёвской области в крестьянской семье.
+                Участвовал в Первой мировой войне, а после революции вступил в ряды большевиков и Красной Армии. В годы Великой Отечественной войны руководил партизанским отрядом, проявил невероятное мужество и героизм, потеряв обе кисти рук и получив серьезное ранение ноги.
+                Несмотря на тяжелую инвалидность, вернулся в родное село и возглавил колхоз "Рассвет", который под его руководством стал первым в послевоенном СССР колхозом-миллионником и одним из передовых хозяйств страны.
+                Его подвиг был отмечен высшими государственными наградами: званиями Героя Советского Союза и Героя Социалистического Труда. Орловский стал примером того, как сила духа и преданность делу могут преодолеть любые жизненные испытания. Его жизнь и труд вдохновляют и сегодня многих людей на служение Родине.
+            </p>
+        </div>
+    </div>
+    <div class="invert">
+        <header class="header">
         <div class="container header__container">
             <div class="header__grid-container">
                 <div class="header__logo">
@@ -29,6 +43,10 @@
                         <li class="header__nav-item">
                             <img class="icon-mail" src="./icons/mail.svg" alt="">
                             <a href="#contacts" class="header__nav-link">Контакты</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <img class="icon-mail" src="./icons/docs.svg" alt="">
+                            <a href="https://svrfond.ru/documents" class="header__nav-link">Документы</a>
                         </li>
                     </ul>
                 </nav>
@@ -61,6 +79,12 @@
                                         <div class="burger-text">Контакты</div>
                                     </a>
                                 </li>
+                                <li class="burger-item">
+                                    <a href="https://svrfond.ru/documents" class="header__nav-link">
+                                        <img class="icon-mail" src="./icons/docs.svg" alt="">
+                                        <div class="burger-text">Документы</div>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -78,19 +102,6 @@
                     <div class="hero__button-wrapper">
                         <a href="#donate" class="donate-btn">Сделать пожертвование</a>
                         <button class="hero__about">Подробнее</button>
-                    </div>
-                </div>
-                <div class="hero__popup">
-                    <div class="popup__wrapper">
-                        <h3 class="popup__title">Об Орловском К.П.</h3>
-                        <button class="popup__close">
-                            <img class="popup__close-img" src="./icons/close.svg" alt="Закрыть">
-                        </button>
-                        <p class="popup__subtitle">Кирилл Прокофьевич Орловский (1895-1968) — выдающийся деятель советской эпохи, чья жизнь стала символом несгибаемой воли и преданности Родине. Родился в деревне Мышковичи Могилёвской области в крестьянской семье.
-                            Участвовал в Первой мировой войне, а после революции вступил в ряды большевиков и Красной Армии. В годы Великой Отечественной войны руководил партизанским отрядом, проявил невероятное мужество и героизм, потеряв обе кисти рук и получив серьезное ранение ноги.
-                            Несмотря на тяжелую инвалидность, вернулся в родное село и возглавил колхоз "Рассвет", который под его руководством стал первым в послевоенном СССР колхозом-миллионником и одним из передовых хозяйств страны.
-                            Его подвиг был отмечен высшими государственными наградами: званиями Героя Советского Союза и Героя Социалистического Труда. Орловский стал примером того, как сила духа и преданность делу могут преодолеть любые жизненные испытания. Его жизнь и труд вдохновляют и сегодня многих людей на служение Родине.
-                        </p>
                     </div>
                 </div>
             </div>
@@ -170,6 +181,7 @@
                         </div>
                         <h3 class="fundActivities__title-item">Духовное попечение</h3>
                         <p class="fundActivities__subtitle-item">Мы организовали чтение неусыпаемой Псалтири о Победе России и русском воинстве. Молитва совершается круглосуточно.</p>
+                        <a href="https://t.me/ThePsalterbot" class="fundActivities__link">Связаться</a>
                     </li>
                     <li class="fundActivities__item">
                         <div class="fundActivities__img-wrapper army">
@@ -177,6 +189,7 @@
                         </div>
                         <h3 class="fundActivities__title-item">Снабжение</h3>
                         <p class="fundActivities__subtitle-item">Благодаря вашим пожертвованиям мы обеспечиваем, материально-техническим снабжением, военнослужащих находящихся в зоне СВО.</p>
+                        <a href="#" class="fundActivities__link">Связаться</a>
                     </li>
                     <li class="fundActivities__item">
                         <div class="fundActivities__img-wrapper medic">
@@ -184,6 +197,7 @@
                         </div>
                         <h3 class="fundActivities__title-item">МедБат</h3>
                         <p class="fundActivities__subtitle-item">Мы обучаем медицинских работников по уходу за раненными бойцами, а также участвуем в служении в военных госпиталях.</p>
+                        <a href="https://t.me/medbat_svr_fond_bot" class="fundActivities__link">Связаться</a>
                     </li>
                 </ul>
             </div>
@@ -223,5 +237,6 @@
         </div>
     </footer>
     <script src="index.js"></script>
+    </div>
 </body>
 </html>
