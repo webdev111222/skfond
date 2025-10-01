@@ -950,6 +950,13 @@ a{
         font-family: "Gilroy";
         font-size: 18px;
     }
+    .wrapper-ul{
+        width: 60%;
+    }
+    .burger-close{
+        top: 10px;
+        right: 10px;
+    }
     .hero__title{
         font-size: 32px;
     }
