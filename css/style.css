@@ -231,7 +231,7 @@ a{
     content: "";
     background-image: url(../icons/info.svg);
     position: absolute;
-    left: -20px;
+    left: -25px;
     top: 12px;
     width: 20px;
     height: 20px;
@@ -473,7 +473,8 @@ a{
 }
 .popup__wrapper{
     max-width: 770px;
-    min-height: 660px;
+    max-height: 90vh; /* чтоб не вылазило за экран */
+    overflow-y: auto;
     border: 1px solid #fff;
     border-radius: 25px;
     background: linear-gradient(70deg,rgba(10, 10, 10, 1) 0%, rgba(33, 33, 33, 1) 100%);
@@ -659,6 +660,11 @@ a{
 @media (max-width: 768px) {
     .wrapper{
         display: block;
+    }
+    .popup__wrapper {
+        min-height: auto;  /* убираем жёсткую высоту */
+        width: 95%;
+        border-radius: 15px;
     }
     .container{
         max-width: 770px;
