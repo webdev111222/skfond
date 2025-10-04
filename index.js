@@ -53,3 +53,50 @@ document.addEventListener('click', (e) => {
     console.log(e);
     
 })
+
+
+
+
+// const doc_gos_reestr = document.querySelector('.gos_reestr');
+// const doc_fond = document.querySelector('.fond');
+// const doc_from_valid = document.querySelector('.from-valid');
+// const doc_bank = document.querySelector('.bank');
+
+const doc_popup = document.querySelector('.doc_popup');
+const doc_BTN = document.querySelector('.doc_close');
+doc_BTN.addEventListener('click', () => {
+    doc_popup.classList.toggle('open-doc');
+})
+const docPopup = document.querySelector('.doc_popup');
+const docImg = document.querySelector('.doc_popup-img');
+const docPdf = document.querySelector('.doc_popup-pdf');
+
+document.addEventListener('click', (e) => {
+  // если клик по госреестру — показываем картинку
+  if (e.target.classList.contains('gos_reestr')) {
+    docPopup.classList.add('open-doc');
+    docImg.src = './icons/gos-reestr.jpg';
+    docImg.style.display = 'block';
+    docPdf.style.display = 'none';
+  }
+
+  // если клик по фонду — показываем PDF
+//   if (e.target.classList.contains('fond')) {
+//     docPopup.classList.add('open-doc');
+//     docPdf.src = './icons/fond-doc.pdf';
+//     docPdf.style.display = 'block';
+//     docImg.style.display = 'none';
+//   }
+    if (e.target.classList.contains('from-valid')) {
+    docPopup.classList.add('open-doc');
+    docImg.src = './icons/from-valid.jpg';
+    docPdf.style.display = 'none';
+    docImg.style.display = 'block';
+  }
+    if (e.target.classList.contains('bank')) {
+    docPopup.classList.add('open-doc');
+    docImg.src = './icons/bank.jpg';
+    docPdf.style.display = 'none';
+    docImg.style.display = 'block';
+  }
+});

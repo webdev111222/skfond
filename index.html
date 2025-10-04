@@ -9,7 +9,6 @@
     <link rel="shortcut icon" href="icons/logo.svg" type="image/x-icon">
     <meta property="og:title" content="Благотворительный фонд Сергея Карнаухова" />
     <meta property="og:description" content="Благотворительный фонд помощи инвалидам «Научный центр имени К.П. Орловского» | Персональный фонд Сергея Карнаухова" />
-    <!-- <meta property="og:image" content="https://example.com/image.jpg" /> -->
     <meta property="og:url" content="https://skfond.ru/" />
     <meta property="og:type" content="website" />
 <body>
@@ -24,6 +23,14 @@
                 Несмотря на тяжелую инвалидность, вернулся в родное село и возглавил колхоз "Рассвет", который под его руководством стал первым в послевоенном СССР колхозом-миллионником и одним из передовых хозяйств страны.
                 Его подвиг был отмечен высшими государственными наградами: званиями Героя Советского Союза и Героя Социалистического Труда. Орловский стал примером того, как сила духа и преданность делу могут преодолеть любые жизненные испытания. Его жизнь и труд вдохновляют и сегодня многих людей на служение Родине.
             </p>
+        </div>
+    </div>
+    <div class="doc_popup">
+        <div class="doc_popup-container">
+            <button class="doc_close">
+                <img class="close-img" src="./icons/close_popup.svg" alt="">
+            </button>
+            <img class="doc_popup-img" src="" alt="">
         </div>
     </div>
     <div class="invert">
@@ -193,7 +200,7 @@
                         </div>
                         <h3 class="fundActivities__title-item">Снабжение</h3>
                         <p class="fundActivities__subtitle-item">Благодаря вашим пожертвованиям мы обеспечиваем, материально-техническим снабжением, военнослужащих находящихся в зоне СВО.</p>
-                        <a href="https://t.me/skfond_bot" class="fundActivities__link">Связаться</a>
+                        <a href="#" class="fundActivities__link">Связаться</a>
                     </li>
                     <li class="fundActivities__item">
                         <div class="fundActivities__img-wrapper medic">
@@ -226,6 +233,36 @@
                 </div>
             </div>
         </section>
+        <section class="documents">
+            <div class="container">
+                <ul class="doc__lists">
+                    <li class="doc__item">
+                        <div class="icon-wrapper">
+                            <img class="icons-doc" src="./icons/docs.svg" alt="">
+                        </div>
+                        <button class="doc__btn gos_reestr">Свидетельство о государственной регистрации</button>
+                    </li>
+                    <li class="doc__item">
+                        <div class="icon-wrapper">
+                            <img class="icons-doc" src="./icons/docs.svg" alt="">
+                        </div>
+                        <a href="https://webdev111222.github.io/doc/fond-doc.pdf" target="_blank" class="doc__btn fond">Устав фонда</a>
+                    </li>
+                    <li class="doc__item">
+                        <div class="icon-wrapper">
+                            <img class="icons-doc" src="./icons/docs.svg" alt="">
+                        </div>
+                        <button class="doc__btn from-valid">Свидетельство о постановке на учет</button>
+                    </li>
+                    <li class="doc__item">
+                        <div class="icon-wrapper">
+                            <img class="icons-doc" src="./icons/docs.svg" alt="">
+                        </div>
+                        <button class="doc__btn bank">Реквизиты фонда</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
     <footer id="contacts" class="footer">
         <div class="container">
@@ -243,5 +280,4 @@
     <script src="index.js"></script>
     </div>
 </body>
-
 </html>
