@@ -37,23 +37,39 @@ elements.forEach(el => observer.observe(el))
 
 const burgerBtnNode = document.querySelector('.burger-menu');
 const burgerPopup = document.querySelector('.header__nav-mobile');
-const burgerClose = document.querySelector('.burger-close')
-console.log(burgerClose);
+const burgerClose = document.querySelector('.burger-close');
+const burgerLinks = burgerPopup.querySelectorAll('a'); // все ссылки внутри меню
 
+// открыть меню
 burgerBtnNode.addEventListener('click', () => {
-    burgerPopup.classList.toggle('flex-open');
-    document.body.classList.toggle('loked');
-})
+    burgerPopup.classList.add('flex-open');
+    document.body.classList.add('loked');
+});
 
+// закрыть меню крестиком
 burgerClose.addEventListener('click', () => {
-    burgerPopup.classList.toggle('flex-open');
-    document.body.classList.toggle('loked');
-})
-document.addEventListener('click', (e) => {
-    console.log(e);
-    
-})
+    burgerPopup.classList.remove('flex-open');
+    document.body.classList.remove('loked');
+});
 
+// закрыть меню при клике на ссылку
+burgerLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        burgerPopup.classList.remove('flex-open');
+        document.body.classList.remove('loked');
+    });
+});
+
+// закрыть меню при клике вне
+document.addEventListener('click', (e) => {
+    if (
+        !burgerPopup.contains(e.target) &&
+        !burgerBtnNode.contains(e.target)
+    ) {
+        burgerPopup.classList.remove('flex-open');
+        document.body.classList.remove('loked');
+    }
+});
 
 
 
